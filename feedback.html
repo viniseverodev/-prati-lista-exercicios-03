@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Aurora - Feedback</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="feedback">
+    <header>
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir Menu"><ion-icon name="menu-outline"></ion-icon></button>
+      <nav id="navMenu" class="navHeader">
+        <a href="./index.html">
+          <ion-icon name="cafe-outline" class="iconHeader"></ion-icon>
+        </a>
+        <ul>
+          <li><a href="./listas.html">Menu</a></li>
+          <li><a href="./feedback.html">Feedback</a></li>
+          <li><a href="./galeria.html">Galeria</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="info">
+      <h1>Deixe sua opinião sobre o Café Aurora</h1>
+      <p>Contamos com o seu feedback</p>
+    </div>
+    <main>
+      <div class="card-form">
+        <form>
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Seu nome completo.."
+            required
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu melhor e-mail"
+            required
+          />
+
+          <label for="street">Rua:</label>
+          <input type="text" name="street" id="street" placeholder="Sua rua.." />
+
+          <label for="number">Número:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Número da sua casa.."
+          />
+
+          <label for="neighborhood">Bairro:</label>
+          <input
+            type="text"
+            name="neighborhood"
+            id="neighborhood"
+            placeholder="Seu bairro.."
+          />
+
+          <label for="city">Cidade:</label>
+          <input type="text" name="city" id="city" placeholder="Sua cidade.." />
+
+          <label for="state">Estado:</label>
+          <input
+            type="state"
+            name="state"
+            id="state"
+            placeholder="Seu estado.."
+          />
+
+          <label for="feedback">Tipo de feedback:</label>
+          <select name="feedback" id="feedback" required>
+            <option value="" disabled selected>Escolha uma alternativa</option>
+            <option value="elogio">Elogio</option>
+            <option value="critica">Crítica</option>
+            <option value="sugestao">Sugestão</option>
+          </select>
+
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Escreva aqui sua mensagem ou observação"
+            rows="6"
+            required
+          ></textarea>
+
+          <button>Enviar feedback</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Café Aurora. Todos os direitos reservados.</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
